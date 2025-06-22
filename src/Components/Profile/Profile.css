@@ -1,0 +1,50 @@
+.profile-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.profile-title {
+    text-align: center;
+}
+
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.profile-fields p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-fields input {
+    width: 70%;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.edit-button,
+.save-button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #0d5c75;
+    color: white;
+}
+
+.save-button {
+    background-color: #28a745;
+    color: white;
+}

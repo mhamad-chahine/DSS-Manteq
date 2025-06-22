@@ -1,0 +1,214 @@
+/* Overall page container */
+.services-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Container with 3 columns */
+  .three-column-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+    gap: 20px;
+  }
+  
+  /* LEFT COLUMN: Tree navigation */
+  .left-column {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .panel-title {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  /* Folder and file styles */
+  .folder {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    font-weight: 500;
+  }
+  
+  .folder:hover {
+    background-color: #e9ecef;
+  }
+  
+  .file {
+    display: flex;
+    align-items: center;
+    padding: 8px 32px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    margin-left: 8px;
+    font-weight: 400;
+  }
+  
+  .file:hover {
+    background-color: #e9ecef;
+  }
+  
+  .file.active {
+    background-color: #d1ecf1;
+    font-weight: 600;
+  }
+  
+  /* CENTER COLUMN: Conditions + Arrow + Action Part */
+  .center-column {
+    display: grid;
+    grid-template-rows: auto auto auto; /* conditions, arrow, actions */
+    gap: 20px;
+  }
+  
+  /* Conditions Part */
+  .conditions-part {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .conditions-part h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .conditions-part textarea {
+    width: 95%;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 1rem;
+  }
+  
+  /* Arrow */
+  .translate-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #555;
+    user-select: none;
+  }
+  
+  /* Action Part */
+  .action-part {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .action-part h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .form-grid label {
+    font-weight: bold;
+    color: #555;
+    align-self: center;
+  }
+  
+  .form-grid input[type="text"],
+  .form-grid input[type="number"],
+  .form-grid select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .placeholder-text {
+    color: #999;
+    font-style: italic;
+  }
+  
+  /* Buttons in the action part */
+  .action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .translate-button,
+  .save-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .translate-button:hover,
+  .save-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* RIGHT COLUMN: Generated Code */
+  .right-column {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .right-column h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .code-box {
+    width: 95%;
+    min-height: 200px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    resize: vertical;
+    font-family: monospace;
+    color: #09ff00;
+    font-size: 0.95rem;
+    background-color: #040404;
+  }
+  
+  /* RESPONSIVE: stack columns on smaller screens */
+  @media (max-width: 992px) {
+    .three-column-container {
+      grid-template-columns: 1fr;
+    }
+    .center-column {
+      grid-template-rows: auto auto auto;
+    }
+    .translate-arrow {
+      display: none; /* Hide arrow if it doesn't fit well on mobile */
+    }
+  }
+  

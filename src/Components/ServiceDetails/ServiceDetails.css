@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.service-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f4f5f7;
+}
+
+/* Title */
+.service-details-container h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Service Detail Box */
+.service-detail-box {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 40px;
+}
+
+.service-detail-box:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Service Name (Title) */
+.service-name {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+/* Description */
+.service-description {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Meta Info (Author, Creation Date) */
+.meta-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #777;
+}
+
+.meta-info p {
+  margin: 0;
+}
+
+/* Number of Rules */
+.number-of-rules {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #e74c3c;
+  margin-top: 30px;
+}

@@ -1,0 +1,103 @@
+/* General Layout */
+.flex-container {
+  display: flex;
+  gap: 20px;
+  width: 90vw;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Left and Right Panels */
+.left-panel, .right-panel {
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 24px;
+}
+
+/* Left Panel (Navigation) */
+.left-panel {
+  flex: 0.4;
+  min-width: 300px;
+  max-width: 400px;
+  overflow-y: auto;
+}
+
+/* Right Panel (Editor) */
+.right-panel {
+  flex: 0.6;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headings */
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* Tree Structure */
+.folder {
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  transition: color 0.2s;
+}
+
+.folder:hover {
+  color: #007bff;
+}
+
+/* File Icons */
+.file {
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  border-radius: 6px;
+}
+
+.file:hover {
+  background: #f1f5f9;
+}
+
+.file.active {
+  background: #e8f0ff;
+  font-weight: bold;
+}
+
+/* Rule Editor */
+.rule-editor {
+  flex-grow: 1;
+}
+
+.code-box {
+  background: #1e1e1e;
+  color: #a6e22e;
+  font-family: monospace;
+  padding: 12px;
+  border-radius: 6px;
+  overflow: auto;
+  height: 300px;
+  white-space: pre-wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    width: 95vw;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+  }
+}
